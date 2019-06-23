@@ -10,13 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
     startGame();
   });
 
-  var $start = $("#start");
-  $start.on("click", function() {
-    $("#start-screen").toggleClass("hide show");
-    $("#game-screen").toggleClass("hide show");
-    startGame();
-  });
-
   function toggleClasses(element, ...classNames) {
     classNames.forEach(name => element.classList.toggle(name));
     // for (let i = 1; i < arguments.length; i++) {
